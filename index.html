@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      @keyframes jerry {
+        0% {
+          transform: translate(0);
+        }
+        25% {
+          opacity: 0.5;
+        }
+        50% {
+          transform: translate(800px);
+        }
+        100% {
+          transform: translate(0);
+        }
+      }
+
+      @keyframes tom {
+        0% {
+          transform: translate(0);
+        }
+        25% {
+          /* opacity: 0.5; */
+        }
+        50% {
+          transform: translate(-800px);
+          opacity: 1;
+        }
+        85% {
+          opacity: 0.5;
+        }
+        100% {
+          transform: translate(0);
+        }
+      }
+
+      .container {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+        background: rgb(231, 73, 33);
+        background: linear-gradient(
+          rgba(231, 73, 33, 1) 0%,
+          rgba(113, 23, 0, 1) 55%,
+          rgba(0, 156, 187, 1) 100%
+        );
+      }
+
+      .jerry {
+        width: 20%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        animation: jerry 4s infinite;
+      }
+
+      .jerry img {
+        width: 100%;
+      }
+
+      .tom {
+        width: 20%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        animation: tom 4s infinite;
+      }
+
+      .tom img {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jerry">
+        <img
+          src="https://i.pinimg.com/originals/03/a4/d5/03a4d55748dfefa852df76b085708c0a.png"
+          alt="jerry.png"
+        />
+      </div>
+      <div class="tom">
+        <img src="pngimg.com - tom_and_jerry_PNG58.png" alt="tom.png" />
+      </div>
+    </div>
+  </body>
+</html>
